@@ -201,7 +201,7 @@ module ECpayPayment
 			params['CheckMacValue'] = chkmac
 			# gen post html
 			api_url = @verify_aiochkout.get_svc_url('AioCheckOut', @helper.get_op_mode)
-			htm = @helper.gen_html_post_form(act: api_url, id: '_form_aiochk', parameters: params)
+			htm = @helper.gen_html_post_form(act: api_url, id: '_form_aiochk', parameters: params, submit: false)
 			# return  post htm
 			return htm
 		end

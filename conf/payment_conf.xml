@@ -20,11 +20,10 @@
     <IgnorePayment>
 <!--   <Method>Credit</Method>
         <Method>WebATM</Method>
-        <Method>ATM</Method>
+        <Method>ATM</Method> -->
         <Method>BARCODE</Method>
         <Method>CVS</Method>
-        <Method>GooglePay</Method>-->
-
+        <Method>GooglePay</Method>
     </IgnorePayment>
 
 </Conf>
