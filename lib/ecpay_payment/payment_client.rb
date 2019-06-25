@@ -157,7 +157,7 @@ module ECpayPayment
 		def aiochkout_base_proc!(params:, invoice:{}, unsupport_param:, pay_method:)
 			if params.is_a?(Hash)
 				# Transform param key to string
-				params.stringify_keys()
+				params.stringify_params_keys()
 				# Remove HoldTradeAMT, IgnorePayment
 				if unsupport_param.is_a?(Array)
 					unsupport_param.each{|pa|params.delete(pa)}

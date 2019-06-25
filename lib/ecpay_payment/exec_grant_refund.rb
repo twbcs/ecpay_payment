@@ -40,7 +40,7 @@ module ECpayPayment
     def act_base_proc!(params:)
       if params.is_a?(Hash)
         # Transform param key to string
-        params.stringify_keys()
+        params.stringify_params_keys()
 
         # Process PlatformID & MerchantID by contractor setting
         if @helper.is_contractor?

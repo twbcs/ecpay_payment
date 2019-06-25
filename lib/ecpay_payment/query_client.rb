@@ -79,7 +79,7 @@ module ECpayPayment
     def query_base_proc!(params:)
       if params.is_a?(Hash)
         # Transform param key to string
-        params.stringify_keys()
+        params.stringify_params_keys()
 
         if @helper.is_contractor?
           params['PlatformID'] = @helper.get_mercid

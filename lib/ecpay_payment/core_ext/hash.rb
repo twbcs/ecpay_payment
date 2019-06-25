@@ -1,5 +1,5 @@
 class Hash
-  def stringify_keys
+  def stringify_params_keys
     result = self.class.new
     orig_key_len = keys.length()
     each_key do |key|
